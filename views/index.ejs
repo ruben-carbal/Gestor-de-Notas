@@ -10,7 +10,9 @@
 <body>
     <section>
         <h1>Esto está funcionando</h1>
-        <button hx-post="/notes" hx-trigger="click" hx-target="#notas" hx-swap="outerHTML">Click</button>
+        <a href="/agregar-nota"><button>Agregar Nota</button></a>
+
+        <button hx-get="/notes" hx-trigger="click" hx-target="#notas" hx-swap="innerHTML">Click</button>
         <div id="notas"></div>
     </section>
 
