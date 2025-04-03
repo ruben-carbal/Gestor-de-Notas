@@ -12,8 +12,8 @@
         <h1>Esto está funcionando</h1>
         <a href="/agregar-nota"><button>Agregar Nota</button></a>
 
-        <button hx-get="/notes" hx-trigger="click" hx-target="#notas" hx-swap="innerHTML">Click</button>
-        <div id="notas"></div>
+        <div hx-get="/notes" hx-swap="innerHTML">
+        </div>
     </section>
 
     <script src="script.js"></script>
