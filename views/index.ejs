@@ -10,10 +10,15 @@
 <body>
     <section>
         <h1>Esto está funcionando</h1>
-        <a href="/agregar-nota"><button>Agregar Nota</button></a>
+        <button hx-on:click="window.location.href='/agregar-nota'">Agregar Nota</button>
 
-        <div hx-get="/notes" hx-swap="innerHTML">
+        <div hx-get=" /notes" hx-swap="innerHTML">
+            cargando notas...
         </div>
+
+        <h3>desde un botón</h3>
+        <button hx-get="/notes" hx-swap="innerHTML" hx-target="#idnotas">Cargar notas</button>
+        <div id="idnotas"></div>
     </section>
 
     <script src="script.js"></script>

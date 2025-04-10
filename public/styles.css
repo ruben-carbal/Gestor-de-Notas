@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+}
+
+#idnotas>div {
+    padding: 4px 13px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    color: black;
+}
