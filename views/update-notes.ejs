@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Note Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+</head>
+
+<body>
+    <section>
+        <form hx-put="/update-note">
+            <label for="title">Título</label> <br>
+            <input id="title" name="title" maxlength="50" />
+            <div>
+                <label for="note">Contenido</label><br>
+                <input id="note" name="note" />
+            </div>
+            <button>Editar Nota</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
